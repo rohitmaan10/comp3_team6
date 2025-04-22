@@ -1,0 +1,10 @@
+@model List<BusinessNewsApp.Models.NewsArticle>
+
+<h2>Business News Headlines</h2>
+<hr />
+@foreach (var article in Model)
+{
+    <p><strong>@article.SourceName</strong></p>
+    <p><a href="@article.Url" target="_blank">@article.Title</a></p>
+    <hr />
+}
