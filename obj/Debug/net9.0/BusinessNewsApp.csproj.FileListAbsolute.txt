@@ -98,3 +98,4 @@
 /Users/rohitmaan/Desktop/comp3_team6/BusinessNewsApp/obj/Debug/net9.0/BusinessNewsApp.csproj.AssemblyReference.cache
 /Users/rohitmaan/Desktop/comp3_team6/BusinessNewsApp/bin/Debug/net9.0/Newtonsoft.Json.dll
 /Users/rohitmaan/Desktop/comp3_team6/BusinessNewsApp/obj/Debug/net9.0/Business.281ED390.Up2Date
+/Users/rohitmaan/Desktop/comp3_team6/BusinessNewsApp/obj/Debug/net9.0/BusinessNewsApp.sourcelink.json

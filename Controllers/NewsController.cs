@@ -14,20 +14,28 @@ public class NewsController : Controller
     }
 
     public async Task<IActionResult> Index()
-    {
-        var apiKey = "YOUR_API_KEY";
-        var url = $"https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey={apiKey}";
-        var response = await _httpClient.GetStringAsync(url);
+{
+    string apiKey = "732934aee2ef451d8ecc9140fd1a6141";
+    string url = $"https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey={apiKey}";
 
+    try
+    {
+        var response = await _httpClient.GetStringAsync(url);
         var apiData = JsonConvert.DeserializeObject<NewsApiResponse>(response);
 
         var articles = apiData.Articles.Select(a => new NewsArticle
         {
-            SourceName = a.Source.Name,
+            SourceName = a.Source?.Name,
             Title = a.Title,
             Url = a.Url
         }).ToList();
 
         return View(articles);
     }
+    catch (HttpRequestException ex)
+    {
+        ViewBag.Error = "Failed to fetch news: " + ex.Message;
+        return View(new List<NewsArticle>());
+    }
+}
 }
