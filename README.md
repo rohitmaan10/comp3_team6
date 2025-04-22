@@ -2,4 +2,5 @@ Competition 3 - API Use
 
 Website user interface
 
-<img width="1452" alt="comp3_weblook" src="https://github.com/user-attachments/assets/37d85a27-ddca-47bc-8d93-f1975de870e7" />
+
+<img width="1293" alt="WebsiteViewComp3" src="https://github.com/user-attachments/assets/59ccceb0-5367-4e36-b29f-0a4aa3e34692" />
